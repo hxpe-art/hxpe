@@ -1,11 +1,11 @@
 h1 {
-  color: red;
-}
+/*   color: red;
+} */
 a {
-  
+  color: black;
 }
 a:hover{
   color: red;
     font-weight: bold;
-  background-color: black;
+/*   background-color: black; */
 }
