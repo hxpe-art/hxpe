@@ -10,7 +10,9 @@ p {
  a:visited{
    color: blue;
 }
- 
+ body {
+    font-family: 'Courier New', monospace;
+ }
 
 a:hover{
   color: white;
