@@ -1,7 +1,7 @@
-div.pic {
+.pic {
   style:"float:right"
-   position: sticky;
-}
+/*    position: sticky;*/
+} 
 h1 {
    color: blue;
 } 
