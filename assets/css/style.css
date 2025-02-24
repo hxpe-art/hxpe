@@ -13,3 +13,6 @@ a:hover{
      background-color: blue; 
   style: "font-size:200%;"
 }
+a:visited{
+   color: blue;
+}
