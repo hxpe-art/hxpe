@@ -8,13 +8,14 @@ h1 {
 p {
   color: blue;
 }
+ a:visited{
+   color: blue;
+}
+ 
+
 a:hover{
   color: white;
     font-weight: bold;
      background-color: blue; 
   style: "font-size:250%;"
 }
-/* a:visited{
-   color: blue;
-}
- */
