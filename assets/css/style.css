@@ -5,8 +5,8 @@ a {
   color: black;
 }
 a:hover{
-  color: red;
+  color: white;
     font-weight: bold;
   style: "font-size:200%;"
-  background-color: black; 
+  background-color: blue; 
 }
