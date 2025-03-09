@@ -39,6 +39,7 @@ const promise = new Promise((resolve, reject) => {
   });
 });
 promise.then(() => {
+  console.log(infoValues);
   //displaying everything
   details.innerHTML = `
     Device Name - ${deviceName}<br />
