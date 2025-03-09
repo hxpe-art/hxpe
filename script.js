@@ -23,9 +23,9 @@ const batteryLevelCharacteristic = await batteryService.getCharacteristic(
   "battery_level"
   );
 const batteryLevel = await batteryLevelCharacteristic.readValue();
-const batterypercent = await batteryLevel.getUint8(0);
+const batteryPercent = await batteryLevel.getUint8(0);
 //^that was battery level, this is getting all charCTEristics from device_information
-const infoCharacterists = await infoService.getCharacteristics();
+const infoCharacteristics = await infoService.getCharacteristics();
 console.log(infoCharacteristics);
 let infoValues = [];
 const promise = new Promise((resolve, reject) => {
