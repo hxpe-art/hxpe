@@ -15,3 +15,6 @@ const device = await navigator.bluetooth.requestDevice({
 //connect to gatt server
 let deviceName = device.gatt.device.name;
 const server = await device.gatt.connect();
+//get service (bluetoooth thing?)
+const batteryService = await server.getPrimaryService("battery_service")
+const infoService = await server.getPrimaryService("device_information");
