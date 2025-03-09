@@ -34,13 +34,13 @@ const promise = new Promise((resolve, reject) => {
 });
 promise.then(() => {
   //displaying everything
-  details.innerHTML ='
+  details.innerHTML = `
     Device Name -${deviceName}<br />
              Battery Level -${batteryPercent}%<br />
   Device Information:
 <u1>
-  ${infoValues.map((value) => '<li>${value}</li>').join("")}
+  ${infoValues.map((value) => `<li>${value}</li>`).join("")}
 <u1>
-  ';
+  `;
 });
   
