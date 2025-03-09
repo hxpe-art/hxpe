@@ -19,8 +19,14 @@ const server = await device.gatt.connect();
 const batteryService = await server.getPrimaryService("battery_service");
 const infoService = await server.getPrimaryService("device_information");
 //getting characteristics, promise
+const batteryLevelCharacteristic = await batteryService.getCharacteristic(
+  "battery_level"
+  );
+const batteryLevel = await batteryLevelCharacteristic.readValue();
+const batterypercent = await batteryLevel.getUint8(0);
+//^that was battery level, this is getting all charCTEristics from device_information
 const infoCharacterists = await infoService.getCharacteristics();
-console.log(infoCharacteristics)
+console.log(infoCharacteristics);
 let infoValues = [];
 const promise = new Promise((resolve, reject) => {
   infoCharacteristics.forEach(async (characteristic, index, array) => {
@@ -29,7 +35,7 @@ const promise = new Promise((resolve, reject) => {
     console.log(new TextDecoder().decode(value));
     //converts to string, sequence of numbers/letters
     infoValues.push(new TextDecoder().decode(value));
-    if (index === array.length -1) resolve();
+    if (index === array.length - 1) resolve();
   });
 });
 promise.then(() => {
