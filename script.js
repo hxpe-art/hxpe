@@ -1,6 +1,13 @@
 const button = document.getElementById("getDetails");
 const details = document.getElementById("details");
-
+//new stuff!!!!
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("Up").addEventListener(
+  "click",
+  incrementCounter
+  )
+})
+  //new stuff end
 button.addEventListener("click", async () => {
   try {
 //request device
