@@ -7,6 +7,12 @@ document.getElementById("Up").addEventListener(
   incrementCounter
   )
 })
+function incrementCounter() {
+  let counterElement = document.getElementById("counter");
+  let count = parseInt(counterElement.innerText);
+  count++;
+  counterElement.innerText = count;
+}
   //new stuff end
 button.addEventListener("click", async () => {
   try {
